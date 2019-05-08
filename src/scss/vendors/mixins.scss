@@ -1,0 +1,29 @@
+// MEDIA QUERIES
+
+@mixin medium {
+  @media screen and (min-width: 800px) {
+    @content;
+  }
+}
+
+// DISPLAY
+
+@mixin flexcolumn($justify) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+}
+
+// SMOOTH TRANSITION
+
+@mixin smoothtrans() {
+  transition: all 1s;
+}
+
+// BACKGROUND-IMG 
+
+@mixin bgimg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

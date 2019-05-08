@@ -1,0 +1,69 @@
+.projects {
+  width: 60vw; 
+  height: 60vh;
+  margin: 0 auto; 
+  transform: translateY(20vh); 
+  display: flex; 
+}
+
+.title {
+  line-height: 1.5; 
+  h2 {
+    font-size: 3rem; 
+    font-family: 'Bebas'; 
+  }
+}
+
+.project__item--date {
+  width: 10%; 
+  height: 100%;
+}
+
+.date__year {
+  margin: 0 auto; 
+  width: 30%; 
+  font-size: 2.5rem; 
+  font-family: 'Bebas', sans-serif; 
+}
+
+.project__item--content, .project__item--cover {
+  width: 45%; 
+  height: 100%;
+}
+
+.project__item--content {
+  padding: 0 40px 40px 40px; 
+  @include flexcolumn(space-between); 
+  line-height: 2; 
+}
+
+.project__item--cover {
+  background-color: #FFDA5E;
+
+}
+
+.cover__rectangle {
+  width: 90%; 
+  height: 90%;
+  border: solid white; 
+  align-self: center; 
+  margin: 0 auto; 
+  transform: translateY(5%); 
+}
+
+.button {
+  @include smoothtrans; 
+  cursor: pointer;
+  width: 100px; 
+  height: 40px; 
+  border: solid #FFDA5E;
+  border-radius: 20px; 
+  @include flexcolumn(center); 
+  align-items: center; 
+  color: #FFDA5E; 
+
+  &:hover {
+    background-color: #FFDA5E;
+    color: white; 
+  }
+}
