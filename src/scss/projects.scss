@@ -4,24 +4,67 @@
 }
 
 .project {
-  width: 60vw; 
-  height: 60vh;
-  margin: 0 auto; 
+  position: relative;
+  width: 100vw; 
+  height: 70vh;
   transform: translateY(20vh); 
-  display: flex; 
+  padding: 0 20px 0 20px;
+  display: block;
+
+  @include medium {
+    width: 60vw; 
+    height: 60vh;
+    margin: 0 auto; 
+    padding: 0; 
+    display: flex; 
+  }
 }
 
 .title {
-  line-height: 1.5; 
+
+  // MOBILE 
+
+    line-height: 1.5; 
   h2 {
-    font-size: 3rem; 
     font-family: 'Bebas'; 
+    font-size: 1.5rem; 
+  }
+
+  @include medium {
+    h2 {
+      
+      font-size: 3rem; 
+      font-family: 'Bebas'; 
+    }
+  }
+
+  h3 {
+    line-height: 2; 
+    &:after {    
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      background: $first-color;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 80%;
+    }
   }
 }
 
 .project__item--date {
-  width: 10%; 
-  height: 100%;
+
+  @include medium {
+    width: 10%; 
+    height: 100%;
+    display: block;
+  }
+
+  // MOBILE 
+
+  display: none; 
 }
 
 .date__year {
@@ -32,20 +75,29 @@
 }
 
 .project__item--content {
-  width: 400px; 
-  height: 400px;
-}
 
-.project__item--content {
-  padding: 0 40px 40px 40px; 
+  @include medium {
+    width: 400px; 
+    height: 400px;
+    padding: 0 40px 40px 40px; 
+  }
+
+  // MOBILE 
+  height: 90%;
   @include flexcolumn(space-between); 
   line-height: 2; 
 }
 
 .project__item--cover {
   background-color: #FFDA5E;
-  width: 400px; 
-  height: 400px;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto; 
+
+  @include medium {
+    width: 400px; 
+    height: 400px;
+  }
 }
 
 .cover__rectangle {
@@ -72,6 +124,10 @@
     background-color: #FFDA5E;
     color: white; 
   }
+
+  @include medium {
+    transform: translateX(0);
+  }
 }
 
 // SVG 
@@ -81,7 +137,7 @@
   width: 100%; 
   fill: #FFDA5E; 
   stroke: white; 
-  stroke-width: 3;
+  stroke-width: 5;
 }
 
 .fill {
@@ -102,4 +158,67 @@
   height: 30px;
   background-color: white; 
   border: 0.5px solid #FFDA5E; 
+}
+
+// ANIMATIONS 
+
+@keyframes fallmobile {
+  from {
+    transform: translateY(-250vh);
+  }
+  to {
+        transform: translateY(250vh);
+  }
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-120vh);
+  }
+  to {
+        transform: translateY(120vh);
+  }
+}
+
+// Animation
+.leaf3, .carot, .tomato1 {
+  animation: fallmobile 7s linear infinite;
+  @include medium {
+    animation: fall 5s linear infinite;
+  }
+}
+
+.cucumber_slice4 {
+  animation: fallmobile 8s linear infinite;
+  @include medium {
+    animation: fall 6s linear infinite;
+  }
+}
+
+.tomato2, .parsley1, .leaf1 {
+  animation: fallmobile 9s linear infinite;
+  @include medium {
+    animation: fall 7s linear infinite;
+  }
+}
+
+.cucumber_slice2 {
+  animation: fallmobile 10s linear infinite;
+  @include medium {
+    animation: fall 8s linear infinite;
+  }
+}
+
+.leaf2, .leaf4, .cucumber_base, .cucumber_slice1, .parsley2 {
+  animation: fallmobile 11s linear infinite;
+  @include medium {
+    animation: fall 9s linear infinite;
+  }
+}
+
+.cucumber_slice3 {
+  animation: fallmobile 12s linear infinite;
+  @include medium {
+    animation: fall 10s linear infinite;
+  }
 }

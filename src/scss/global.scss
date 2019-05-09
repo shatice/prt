@@ -7,10 +7,14 @@ body {
 }
 
 .border {
-  position: fixed; 
-  width: 100vw; 
-  height: 100vh;
-  border: solid 2vh #FFDA5E;
-  top: 0; 
-  z-index: -100; 
+  display: none; 
+  @include medium {
+    display: block; 
+    position: fixed; 
+    width: 100vw; 
+    height: 100vh;
+    border: solid 2vh #FFDA5E;
+    top: 0; 
+    z-index: -100; 
+  }
 }
