@@ -1,4 +1,9 @@
-.projects {
+.project__container {
+  width: 100vw; 
+  height: 100vh;
+}
+
+.project {
   width: 60vw; 
   height: 60vh;
   margin: 0 auto; 
@@ -26,9 +31,9 @@
   font-family: 'Bebas', sans-serif; 
 }
 
-.project__item--content, .project__item--cover {
-  width: 45%; 
-  height: 100%;
+.project__item--content {
+  width: 400px; 
+  height: 400px;
 }
 
 .project__item--content {
@@ -39,7 +44,8 @@
 
 .project__item--cover {
   background-color: #FFDA5E;
-
+  width: 400px; 
+  height: 400px;
 }
 
 .cover__rectangle {
@@ -66,4 +72,34 @@
     background-color: #FFDA5E;
     color: white; 
   }
+}
+
+// SVG 
+
+.cover__draw {
+  height: 100%; 
+  width: 100%; 
+  fill: #FFDA5E; 
+  stroke: white; 
+  stroke-width: 3;
+}
+
+.fill {
+  stroke-width: 15;
+}
+
+.counter {
+  position: fixed; 
+  bottom: 15vh; 
+  left: 45vw; 
+  width: 20vw; 
+  display: flex; 
+  justify-content: space-between; 
+}
+
+.counter__item {
+  width: 5px; 
+  height: 40px;
+  background-color: white; 
+  border: 0.5px solid #FFDA5E; 
 }

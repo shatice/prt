@@ -1,7 +1,16 @@
 body {
   font-family: $bodyfont;
   color: $first-color;
-  border: solid 2vh #FFDA5E; 
+  // border: solid 2vh #FFDA5E; 
+  // width: 100vw; 
+  // height: 100vh;
+}
+
+.border {
+  position: fixed; 
   width: 100vw; 
   height: 100vh;
+  border: solid 2vh #FFDA5E;
+  top: 0; 
+  z-index: -100; 
 }
