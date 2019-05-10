@@ -14,9 +14,6 @@ logo.addEventListener('click', function() {
   logo.classList.toggle('is-open');
   icons.classList.toggle('is-open');
   lang.classList.toggle('is-hidden');
-  list.classList.toggle('is-hidden');
-  content.classList.toggle('is-hidden');
-  drawslist.classList.toggle('is-hidden');
 })
 
 
