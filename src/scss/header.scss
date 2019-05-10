@@ -1,0 +1,36 @@
+// NAME TITLE 
+.introduction {
+  @include smoothtrans;
+  font-family: 'Bebas', sans-serif;
+  position: fixed;
+  top: 5vh;
+  left: 5vw;
+  z-index: 50; 
+
+  @include medium {
+    top: 5vh;
+    left: 5vw;
+  }
+}
+
+.introduction.is-open {
+  color: white;
+
+  @include medium {
+    transform: translateX(65vw);
+  }
+}
+
+.introduction__title {
+  font-size: 2rem;
+
+  @include medium {
+    font-size: 2.5rem;
+  }
+}
+
+.introduction__subtitle {
+  @include medium {
+    font-size: 1.25rem;
+  }
+}

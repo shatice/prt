@@ -1,102 +1,37 @@
-// NAME TITLE 
-.introduction {
-  @include smoothtrans;
-  font-family: 'Bebas', sans-serif;
-  position: fixed;
-  top: 5vh;
-  left: 5vw;
-
+.border {
+  display: none; 
+  
   @include medium {
-    top: 5vh;
-    left: 5vw;
+    display: block; 
+    position: fixed; 
+    z-index: 50; 
+    background: #FFDA5E;
   }
 }
 
-.introduction.is-open {
-  color: white;
-
-  @include medium {
-    transform: translateX(65vw);
-  }
+.border__up, .border__down {
+  width: 100vw;
+  height: 1rem;
 }
 
-.introduction__title {
-  font-size: 2rem;
-
-  @include medium {
-    font-size: 2.5rem;
-  }
+.border__left, .border__right {
+  width: 1rem;
+  height: 100vh;
+  top: 0; 
 }
 
-.introduction__subtitle {
-  @include medium {
-    font-size: 1.25rem;
-  }
+.border__up {
+  top: 0; 
 }
 
-// LANG 
-.languages {
-  @include smoothtrans;
-  cursor: pointer;
-  font-family: 'Bebas', sans-serif;
-  display: none;
-
-  @include medium {
-    display: flex;
-    position: fixed;
-    bottom: 5vh;
-    left: 5vw;
-  }
+.border__left {
+  left: 0; 
 }
 
-// NETWORK ICONS
-.icons__list {
-  @include smoothtrans;
-
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  bottom: 10vh;
-  left: 5vw;
-  width: 50vw;
-  transform: translateX(200%);
-
-  @include medium {
-    display: flex;
-    bottom: 5vh;
-    width: 20vw;
-    left: 75vw;
-    transform: translateX(0);
-  }
+.border__down {
+  bottom: 0;
 }
 
-.icons__list.is-open {
-  @include smoothtrans;
-  transform: translateX(0);
-
-  .icon {
-    @include medium {
-      fill: white;
-    }
-  }
-}
-
-.icon {
-  @include smoothtrans;
-  width: 25px;
-  height: 25px;
-  fill: white;
-
-  @include medium {
-    fill: $first-color;
-
-    &:hover {
-      transform: scale(1.2);
-    }
-  }
-}
-
-.is-hidden {
-  opacity: 0.5;
-  @include smoothtrans;
+.border__right {
+  right: 0;
 }

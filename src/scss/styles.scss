@@ -3,9 +3,15 @@
 @import './vendors/mixins.scss';
 @import './vendors/variables.scss';
 
+@import 'header.scss';
+@import 'projects.scss'; 
+@import 'about.scss';
+@import 'footer.scss';
+@import 'aside.scss'; 
+
 @import './svg/logo.scss';
 
-@import 'about.scss';
-@import 'global.scss';
-@import 'aside.scss';
-@import 'projects.scss'; 
+body {
+  font-family: $bodyfont;
+	color: $first-color;
+}

@@ -1,0 +1,68 @@
+// LANG 
+.languages {
+  @include smoothtrans;
+  cursor: pointer;
+
+  display: none;
+
+  font-family: 'Bebas', sans-serif;
+
+  @include medium {
+    display: flex;
+    position: fixed;
+    bottom: 5vh;
+    left: 5vw;
+  }
+}
+
+// NETWORK ICONS
+.icons__list {
+  @include smoothtrans;
+
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 10vh;
+  left: 5vw;
+  width: 50vw;
+  transform: translateX(200%);
+
+  @include medium {
+    display: flex;
+    bottom: 5vh;
+    width: 20vw;
+    left: 75vw;
+    transform: translateX(0);
+  }
+}
+
+.icons__list.is-open {
+  @include smoothtrans;
+  transform: translateX(0);
+
+  .icon {
+    @include medium {
+      fill: white;
+    }
+  }
+}
+
+.icon {
+  @include smoothtrans;
+  width: 25px;
+  height: 25px;
+  fill: white;
+
+  @include medium {
+    fill: $first-color;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.is-hidden {
+  opacity: 0.5;
+  @include smoothtrans;
+}
