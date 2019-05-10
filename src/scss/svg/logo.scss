@@ -10,7 +10,7 @@
   z-index: 50; 
 
   position: fixed;
-  bottom: 5vh;
+  top: 5vh;
   right: 5vw;
   width: 50px;
   height: 40px;
@@ -18,12 +18,11 @@
   stroke: white;
   stroke-width: 10;
 
+  animation: rotate 5s linear infinite; 
+
   @include medium {
-    top: 5vh;
-    right: 5vw;
     width: 70px;
     height: 60px;
-    animation: rotate 5s linear infinite; 
 
     &:hover {
     }

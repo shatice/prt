@@ -1,0 +1,59 @@
+@keyframes fallmobile {
+  from {
+    transform: translateY(-250vh);
+  }
+  to {
+        transform: translateY(250vh);
+  }
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-120vh);
+  }
+  to {
+        transform: translateY(120vh);
+  }
+}
+
+.leaf3, .carot, .tomato1 {
+  animation: fallmobile 7s linear infinite;
+  @include medium {
+    animation: fall 5s linear infinite;
+  }
+}
+
+.cucumber_slice4 {
+  animation: fallmobile 8s linear infinite;
+  @include medium {
+    animation: fall 6s linear infinite;
+  }
+}
+
+.tomato2, .parsley1, .leaf1 {
+  animation: fallmobile 9s linear infinite;
+  @include medium {
+    animation: fall 7s linear infinite;
+  }
+}
+
+.cucumber_slice2 {
+  animation: fallmobile 10s linear infinite;
+  @include medium {
+    animation: fall 8s linear infinite;
+  }
+}
+
+.leaf2, .leaf4, .cucumber_base, .cucumber_slice1, .parsley2 {
+  animation: fallmobile 11s linear infinite;
+  @include medium {
+    animation: fall 9s linear infinite;
+  }
+}
+
+.cucumber_slice3 {
+  animation: fallmobile 12s linear infinite;
+  @include medium {
+    animation: fall 10s linear infinite;
+  }
+}

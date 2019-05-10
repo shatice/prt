@@ -1,102 +1,50 @@
+// CONTAINER
+
 .project__container {
   width: 100vw; 
   height: 100vh;
+  @include flexcolumn(center);
 }
 
 .project {
-  position: relative;
-  width: 100vw; 
   height: 70vh;
-  transform: translateY(20vh); 
-  padding: 0 20px 0 20px;
-  display: block;
 
   @include medium {
-    width: 60vw; 
-    height: 60vh;
-    margin: 0 auto; 
+    display: flex;
+    align-content: center; 
+    width: 1000px; 
+    height: 400px;
+    margin: auto; 
     padding: 0; 
     display: flex; 
+    transform: translateY(0); 
   }
 }
 
-.title {
-
-  // MOBILE 
-
-    line-height: 1.5; 
-  h2 {
-    font-family: 'Bebas'; 
-    font-size: 1.5rem; 
-  }
-
-  @include medium {
-    h2 {
-      
-      font-size: 3rem; 
-      font-family: 'Bebas'; 
-    }
-  }
-
-  h3 {
-    line-height: 2; 
-    &:after {    
-      background: none repeat scroll 0 0 transparent;
-      bottom: 0;
-      content: "";
-      display: block;
-      height: 2px;
-      left: 50%;
-      background: $first-color;
-      transition: width 0.3s ease 0s, left 0.3s ease 0s;
-      width: 80%;
-    }
-  }
-}
+// 1rst BLOCK
 
 .project__item--date {
-
-  @include medium {
-    width: 10%; 
-    height: 100%;
-    display: block;
-  }
-
-  // MOBILE 
-
   display: none; 
-}
-
-.date__year {
-  margin: 0 auto; 
-  width: 30%; 
   font-size: 2.5rem; 
   font-family: 'Bebas', sans-serif; 
-}
-
-.project__item--content {
-
   @include medium {
-    width: 400px; 
-    height: 400px;
-    padding: 0 40px 40px 40px; 
+    display: block;
+    width: 50px; 
   }
-
-  // MOBILE 
-  height: 90%;
-  @include flexcolumn(space-between); 
-  line-height: 2; 
 }
+
+// 2nd BLOCK
 
 .project__item--cover {
   background-color: #FFDA5E;
-  width: 100%;
+  width: 200px;
   height: 200px;
   margin: 0 auto; 
 
   @include medium {
     width: 400px; 
     height: 400px;
+    margin: auto; 
   }
 }
 
@@ -107,6 +55,49 @@
   align-self: center; 
   margin: 0 auto; 
   transform: translateY(5%); 
+}
+
+// 3rd BLOCK
+
+.project__item--content {
+  height: 60%;
+
+  @include medium {
+    width: 550px; 
+    height: 400px;
+    padding: 0 40px 40px 40px; 
+    line-height: 2; 
+    @include flexcolumn(space-between); 
+  }
+}
+
+.title {
+  line-height: 1.5; 
+
+  h2 {
+  font-family: 'Bebas'; 
+  font-size: 1.5rem; 
+  }
+
+  h3 {
+    line-height: 2; 
+    font-weight: bold; 
+    font-size: 1.2rem; 
+  }
+
+  @include medium {
+    h2 {
+      font-size: 3rem; 
+      font-family: 'Bebas'; 
+    }
+  }
+}
+
+.description {
+  @include medium {
+    height: 200px;
+    width: 100%; 
+  }
 }
 
 .button {
@@ -124,31 +115,23 @@
     background-color: #FFDA5E;
     color: white; 
   }
+}
+
+// COUNTER 
+
+.counter {
+  display: none; 
 
   @include medium {
-    transform: translateX(0);
+    width: 100vw; 
+    position: fixed; 
+    bottom: 15vh; 
   }
 }
 
-// SVG 
-
-.cover__draw {
-  height: 100%; 
-  width: 100%; 
-  fill: #FFDA5E; 
-  stroke: white; 
-  stroke-width: 5;
-}
-
-.fill {
-  stroke-width: 15;
-}
-
-.counter {
-  position: fixed; 
-  bottom: 15vh; 
-  left: 45vw; 
+.counter__list {
   width: 20vw; 
+  margin: 0 auto; 
   display: flex; 
   justify-content: space-between; 
 }
@@ -158,67 +141,4 @@
   height: 30px;
   background-color: white; 
   border: 0.5px solid #FFDA5E; 
-}
-
-// ANIMATIONS 
-
-@keyframes fallmobile {
-  from {
-    transform: translateY(-250vh);
-  }
-  to {
-        transform: translateY(250vh);
-  }
-}
-
-@keyframes fall {
-  from {
-    transform: translateY(-120vh);
-  }
-  to {
-        transform: translateY(120vh);
-  }
-}
-
-// Animation
-.leaf3, .carot, .tomato1 {
-  animation: fallmobile 7s linear infinite;
-  @include medium {
-    animation: fall 5s linear infinite;
-  }
-}
-
-.cucumber_slice4 {
-  animation: fallmobile 8s linear infinite;
-  @include medium {
-    animation: fall 6s linear infinite;
-  }
-}
-
-.tomato2, .parsley1, .leaf1 {
-  animation: fallmobile 9s linear infinite;
-  @include medium {
-    animation: fall 7s linear infinite;
-  }
-}
-
-.cucumber_slice2 {
-  animation: fallmobile 10s linear infinite;
-  @include medium {
-    animation: fall 8s linear infinite;
-  }
-}
-
-.leaf2, .leaf4, .cucumber_base, .cucumber_slice1, .parsley2 {
-  animation: fallmobile 11s linear infinite;
-  @include medium {
-    animation: fall 9s linear infinite;
-  }
-}
-
-.cucumber_slice3 {
-  animation: fallmobile 12s linear infinite;
-  @include medium {
-    animation: fall 10s linear infinite;
-  }
 }
