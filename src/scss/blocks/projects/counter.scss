@@ -1,0 +1,24 @@
+.counter {
+  display: none; 
+
+  @include medium {
+    display: block; 
+    width: 100vw; 
+    position: fixed; 
+    bottom: 15vh; 
+  }
+}
+
+.counter__list {
+  width: 20vw; 
+  margin: 0 auto; 
+  display: flex; 
+  justify-content: space-between; 
+}
+
+.counter__item {
+  width: 5px; 
+  height: 30px;
+  background-color: white; 
+  border: 0.5px solid #FFDA5E; 
+}

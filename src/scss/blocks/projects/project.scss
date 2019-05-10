@@ -1,0 +1,30 @@
+.project__container {
+  width: 100vw; 
+  margin-top: 10vh; 
+  @include flexcolumn(flex-end);
+
+  @include medium {
+    height: 100vh;
+    margin-top: 0;  
+    justify-content: center; 
+  }
+}
+
+.project__container:nth-child(1) {
+  margin-top: 20vh; 
+
+  @include medium {
+    margin-top: 0;
+  }
+}
+
+.project {
+  @include medium {
+    width: 1000px; 
+    height: 400px;
+    margin: auto; 
+    padding: 0; 
+    display: flex;
+    align-content: center; 
+  }
+}

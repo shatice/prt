@@ -1,6 +1,6 @@
 let // ABOUT
   about = document.querySelector('.about'),
-  intro = document.querySelector('.introduction'),
+  intro = document.querySelector('.header'),
   logo = document.querySelector('.logo'),
   icons = document.querySelector('.icons__list'),
   lang = document.querySelector('.languages');

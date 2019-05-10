@@ -1,0 +1,10 @@
+.project__item--date {
+  display: none; 
+  @include medium {
+    display: block;
+    width: 50px; 
+    margin-left: 20px; 
+    font-family: 'Bebas', sans-serif; 
+    font-size: 2.5rem; 
+  }
+}

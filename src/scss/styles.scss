@@ -3,17 +3,18 @@
 @import './vendors/mixins.scss';
 @import './vendors/variables.scss';
 
-@import 'header.scss';
-@import 'projects.scss'; 
-@import 'about.scss';
-@import 'footer.scss';
-@import 'aside.scss'; 
+@import './blocks/body.scss';
+@import './blocks/header.scss';
+@import './blocks/about.scss';
+@import './blocks/footer.scss';
+@import './blocks/aside.scss';
+
+@import './blocks/projects/project.scss'; 
+@import './blocks/projects/date.scss';
+@import './blocks/projects/cover.scss';
+@import './blocks/projects/content.scss';
+@import './blocks/projects/counter.scss';
 
 @import './svg/logo.scss';
 @import './svg/draws.scss';
 @import './svg/socomptoir.scss';
-
-body {
-  font-family: $bodyfont;
-	color: $first-color;
-}

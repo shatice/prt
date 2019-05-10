@@ -1,5 +1,5 @@
 // NAME TITLE 
-.introduction {
+.header {
   @include smoothtrans;
   font-family: 'Bebas', sans-serif;
   position: fixed;
@@ -13,7 +13,7 @@
   }
 }
 
-.introduction.is-open {
+.header.is-open {
   color: white;
 
   @include medium {
@@ -21,7 +21,7 @@
   }
 }
 
-.introduction__title {
+.header__title {
   font-size: 2rem;
 
   @include medium {
@@ -29,7 +29,7 @@
   }
 }
 
-.introduction__subtitle {
+.header__subtitle {
   @include medium {
     font-size: 1.25rem;
   }
