@@ -6,7 +6,8 @@ let // ABOUT
   lang = document.querySelector('.languages'),
   footer = document.querySelector('.footer'), 
   counter = document.querySelector('.counter'),
-  scroll = document.querySelector('.scroll');
+  scroll = document.querySelector('.scroll'),
+  copyr = document.querySelector('.copyrights');
     
 
 // ABOUT SECTION
@@ -27,7 +28,8 @@ var waypoint1 = new Waypoint({
   handler: function(direction) {
     console.log('Scrolled to waypoint!')
     header.classList.toggle('is-reached');
-    footer.classList.toggle('is-reached');
+    icons.classList.toggle('is-reached');
+    lang.classList.toggle('is-reached');
     logo.classList.toggle('is-reached');
     counter.classList.toggle('is-reached');
   }
@@ -38,11 +40,13 @@ var waypoint2 = new Waypoint({
   handler: function(direction) {
     console.log('Scrolled to waypoint!')
     header.classList.toggle('is-reached');
-    footer.classList.toggle('is-reached');
+    icons.classList.toggle('is-reached');
+    lang.classList.toggle('is-reached');
     logo.classList.toggle('is-reached');
     counter.classList.toggle('is-reached');
+    copyr.classList.toggle('is-reached');
   },
-  offset: '70%'
+  offset: '80%'
 });
 
 var waypoint3 = new Waypoint({

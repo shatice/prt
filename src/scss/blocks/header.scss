@@ -35,13 +35,11 @@
   }
 }
 
-.header, .footer, .logo, .counter {
+.header, .logo, .counter {
   opacity: 0;
   transition: opacity 0.5s;
 }
 
-.header.is-reached, .footer.is-reached, .logo.is-reached
-// .counter.is-reached 
-{
+.header.is-reached, .logo.is-reached {
   opacity: 1;
 }

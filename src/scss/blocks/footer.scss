@@ -32,7 +32,8 @@
 
   @include medium {
     display: block;
-    align-self: flex-end; 
+    align-self: flex-end;
+    width: 20%; 
   }
 }
 
@@ -81,4 +82,25 @@
 .is-hidden {
   opacity: 0.5;
   @include smoothtrans;
+}
+
+.copyrights {
+  @include smoothtrans;  
+  margin: 0 auto; 
+  width: 20%;
+  text-align: center; 
+  opacity: 0;
+}
+
+.copyrights.is-reached {
+  opacity: 1;
+}
+
+.languages, .icons__list {
+  opacity: 0;
+}
+
+.languages.is-reached, .icons__list.is-reached {
+  opacity: 1;
+  
 }
