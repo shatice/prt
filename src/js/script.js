@@ -6,7 +6,7 @@ let // ABOUT
   lang = document.querySelector('.languages'),
   footer = document.querySelector('.footer'), 
   counter = document.querySelector('.counter'),
-  scroll = document.querySelector('.scroll'),
+  scroll = document.querySelector('.scroll__down'),
   copyr = document.querySelector('.copyr');
     
 

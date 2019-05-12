@@ -1,6 +1,14 @@
 .end {
   width: 100vw; 
   height: 100vh;
+  @include flexcolumn(center);
+}
+
+.networks__list {
+  display: flex; 
+  justify-content: space-around; 
+  width: 30%; 
+  margin: 0 auto; 
 }
 
 .copyr {
@@ -21,3 +29,4 @@
 .copyr.is-reached {
   opacity: 1;
 }
+

@@ -1,5 +1,4 @@
 .footer {
-  display: none; 
   opacity: 0;
   transition: transform 0.5s 1s, opacity 1s; 
   position: fixed; 
@@ -7,6 +6,7 @@
   bottom: 5vh; 
   padding: 0 5vh 0 5vh;
   transform: translateX(200%);
+  z-index: 45;
 
   @include medium {
     width: 90vw; 

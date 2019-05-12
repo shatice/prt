@@ -1,5 +1,9 @@
 // ABOUT SECTION
 
+.about__container {
+  
+}
+
 .about {
   z-index: 40;
   @include smoothtrans;
@@ -18,7 +22,8 @@
   color: white;
 
   @include medium {
-    width: 35vw;
+    width: 500px;
+    @include flexcolumn(center);
   }
 }
 
@@ -29,7 +34,8 @@
 // ABOUT CONTENT
 
 .about__content {
-  height: 50vh;
+  font-size: 0.9rem;
+  max-height: 80%;
 
   @include flexcolumn(space-between);
 
@@ -37,17 +43,13 @@
   line-height: 1.5;
 
   @include medium {
-    height: 50vh;
     
     transform: translateY(0);
 
     padding: 0 5vw 0 5vw;
     font-size: 1.2rem;
+    // margin-bottom: 5vh;
   }
-}
-
-.about__description {
-  margin-bottom: 10px;
 }
 
 .about__title {
@@ -56,6 +58,14 @@
 
   @include medium {
     font-size: 1.3rem;
+  }
+}
+
+.about__title, .about__description, .about__infos {
+  margin-bottom: 10px;
+
+  @include medium {
+    margin-bottom: 20px;
   }
 }
 
@@ -74,7 +84,7 @@ span.major {
 .contact__item {
   width: 90px;
 
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding-bottom: 5px;
 
   font-size: 0.9rem;
@@ -85,5 +95,9 @@ span.major {
   @include medium {
     font-size: 1rem;
   }
+}
+
+.span__chip {
+  color: white; 
 }
 
