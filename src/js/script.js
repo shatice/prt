@@ -26,7 +26,6 @@ logo.addEventListener('click', function() {
 var waypoint1 = new Waypoint({
   element: document.getElementById('projects'),
   handler: function(direction) {
-    console.log('Scrolled to waypoint!')
     header.classList.toggle('is-reached');
     footer.classList.toggle('is-reached');
     logo.classList.toggle('is-reached');
@@ -38,7 +37,6 @@ var waypoint1 = new Waypoint({
 var waypoint2 = new Waypoint({
   element: document.getElementById('end'),
   handler: function(direction) {
-    console.log('Scrolled to waypoint!')
     header.classList.toggle('is-reached');
     footer.classList.toggle('is-reached');
     logo.classList.toggle('is-reached');
@@ -50,16 +48,14 @@ var waypoint2 = new Waypoint({
 var waypoint3 = new Waypoint({
   element: document.getElementById('project1'),
   handler: function(direction) {
-    console.log('OOOK');
     scroll.classList.toggle('is-reached');
   },
-  offset: '70%'
+  offset: '95%'
 })
 
 var waypoint4 = new Waypoint({
   element: document.getElementById('end'),
   handler: function(direction) {
-    console.log('OOOK');
     copyr.classList.toggle('is-reached');
   }, 
   offset: '30%'
