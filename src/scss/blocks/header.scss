@@ -37,7 +37,6 @@
 
 .header, .logo, .counter {
   opacity: 0;
-  transition: opacity 0.5s;
 }
 
 .header.is-reached, .logo.is-reached {

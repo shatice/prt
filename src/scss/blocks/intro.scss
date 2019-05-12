@@ -9,7 +9,6 @@
 }
 
 .intro {
-  border: solid 12px; 
   width: 100vw; 
   height: 100vh;
   background: $second-color; 
@@ -20,13 +19,17 @@
 .intro__container {
   position: relative;
   height: 100vh;
-  border: solid;
 }
 
 .intro__draw {
   width: 100%; 
   height: 70%;
   position: relative;
+  transform: translateY(-5vh);
+
+  @include medium {
+    transform: translateY(0);
+  }
 }
 
 .logointro {

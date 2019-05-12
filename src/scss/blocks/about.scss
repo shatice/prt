@@ -1,6 +1,7 @@
 // ABOUT SECTION
 
 .about {
+  z-index: 40;
   @include smoothtrans;
 
   width: 100vw;
