@@ -1,3 +1,26 @@
+.footer {
+  transition: all 0.5s 1s; 
+  position: fixed; 
+  width: 100vw;
+  bottom: 5vh; 
+  padding: 0 5vh 0 5vh;
+  transform: translateX(200%);
+
+  @include medium {
+    width: 90vw; 
+    left: 5vw;
+    padding: 0; 
+    transform: translateX(0);
+    display: flex; 
+    justify-content: space-between; 
+  }
+}
+
+.footer.is-open {  
+  transition: all 0.1s; 
+  transform: translateX(0);
+}
+
 // LANG 
 .languages {
   @include smoothtrans;
@@ -8,10 +31,8 @@
   font-family: 'Bebas', sans-serif;
 
   @include medium {
-    display: flex;
-    position: fixed;
-    bottom: 5vh;
-    left: 5vw;
+    display: block;
+    align-self: flex-end; 
   }
 }
 
@@ -21,28 +42,24 @@
 
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  bottom: 10vh;
-  left: 5vw;
-  width: 50vw;
-  transform: translateX(200%);
+  width: 60%;
+  // transform: translateX(200%);
+  margin: 0 auto; 
 
   @include medium {
     display: flex;
-    bottom: 5vh;
-    width: 20vw;
-    left: 75vw;
-    transform: translateX(0);
+    width: 20%;
+    margin: 0; 
   }
 }
 
 .icons__list.is-open {
   @include smoothtrans;
-  transform: translateX(0);
 
   .icon {
     @include medium {
       fill: white;
+      transform: none; 
     }
   }
 }
