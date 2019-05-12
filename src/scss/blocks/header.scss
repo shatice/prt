@@ -1,6 +1,6 @@
 // NAME TITLE 
 .header {
-  @include smoothtrans;
+  @include smoothtrans;  
   font-family: 'Bebas', sans-serif;
   position: fixed;
   top: 5vh;
@@ -33,4 +33,15 @@
   @include medium {
     font-size: 1.25rem;
   }
+}
+
+.header, .footer, .logo, .counter {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.header.is-reached, .footer.is-reached, .logo.is-reached
+// .counter.is-reached 
+{
+  opacity: 1;
 }

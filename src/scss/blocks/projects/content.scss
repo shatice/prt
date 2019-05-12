@@ -62,18 +62,18 @@
   cursor: pointer;
   width: 100px; 
   height: 40px; 
-  border: solid #FFDA5E;
+  border: solid $second-color;
   border-radius: 20px; 
   @include flexcolumn(center); 
   align-items: center; 
-  color: #FFDA5E; 
+  color: $second-color; 
 
   @include medium {
     margin: 0; 
   }
 
   &:hover {
-    background-color: #FFDA5E;
+    background-color: $second-color;
     color: white; 
   }
 }

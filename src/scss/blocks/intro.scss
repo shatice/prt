@@ -1,0 +1,84 @@
+@keyframes jump {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+}
+
+.intro {
+  position: relative;
+  width: 100vw; 
+  height: 100vh;
+  background: $second-color; 
+  background: white; 
+  @include flexcolumn(center);
+}
+
+.intro__draw {
+  width: 100%; 
+  height: 70%;
+  margin: 0 auto; 
+  position: absolute;  
+}
+
+.logointro {
+  stroke-width: 3;
+  fill: #FFDA5E;
+  stroke: white; 
+  width: 100%; 
+  height: 100%;
+  animation: rotate 5s linear infinite; 
+}
+
+.intro__text {
+  width: 80%; 
+  height: 80%;
+  margin: 0 auto; 
+  @include flexcolumn(center);
+  text-align: center; 
+  z-index: 20;
+  font-size: 4.5rem; 
+  font-family: 'Bebas', sans-serif; 
+  -webkit-text-stroke-color: $second-color; 
+  -webkit-text-stroke-width: 2px; 
+  color: white;
+}
+
+.intro__subtitle {
+  font-size: 3.5rem; 
+}
+
+.scroll {
+  @include smoothtrans; 
+  font-family: 'Bebas', sans-serif; 
+  width: 100vw; 
+  position: fixed; 
+  bottom: 5vh; 
+}
+
+.scroll__content {
+  margin: 0 auto; 
+  @include flexcolumn(center);  
+  align-items: center; 
+  width: 10%;
+  animation: jump 1s alternate infinite;  
+}
+
+.scroll__bar {
+  width: 5px; 
+  height: 40px;
+  // border: solid $first-color;
+  // border-width: 0 5px 5px 0;
+  // display: inline-block;
+  // padding: 12px;
+  // transform: rotate(45deg);
+  background: $first-color;
+  margin: 10px 0 10px 0;
+}
+
+.scroll.is-reached {
+  opacity: 0;
+}

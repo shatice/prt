@@ -851,8 +851,23 @@
     <h2 class="header__subtitle">Développeuse front end</h2>
   </header>
   <main>
-    <section class="projects">
-      <section class="project__container">
+    <section id="intro" class="intro">
+      <div class="intro__text">
+        <p class="intro__title">Sarah Güngör</p>
+        <p class="intro__subtitle">Développeuse front end</p>
+      </div>
+      <div class="intro__draw">
+        <svg class="logointro" aria-hidden="true"><use xlink:href="#logo"></use></svg>
+      </div>
+      <aside class="scroll">
+        <div class="scroll__content">
+          <p class="scroll__text">mes projets</p>
+          <div class="scroll__bar"></div>
+        </div>
+      </aside>
+    </section>
+    <section id="projects" class="projects">
+      <section id="project1" class="project__container">
         <article class="project">
           <div class="project__item project__item--date">
             <p>2</p>
@@ -1051,6 +1066,9 @@
           </div>
         </article>
       </section>
+    </section>
+    <section id="end" class="end">
+
     </section>
     <div class="border">
       

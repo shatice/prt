@@ -1,5 +1,5 @@
 .footer {
-  transition: all 0.5s 1s; 
+  transition: transform 0.5s 1s, opacity 1s; 
   position: fixed; 
   width: 100vw;
   bottom: 5vh; 
@@ -17,7 +17,7 @@
 }
 
 .footer.is-open {  
-  transition: all 0.1s; 
+  transition: transform 0.1s; 
   transform: translateX(0);
 }
 
@@ -43,7 +43,6 @@
   display: flex;
   justify-content: space-between;
   width: 60%;
-  // transform: translateX(200%);
   margin: 0 auto; 
 
   @include medium {

@@ -13,7 +13,7 @@
 
   @include flexcolumn(center);
 
-  background: #FFDA5E;
+  background: $second-color;
   color: white;
 
   @include medium {
