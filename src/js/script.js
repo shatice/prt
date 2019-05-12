@@ -7,7 +7,7 @@ let // ABOUT
   footer = document.querySelector('.footer'), 
   counter = document.querySelector('.counter'),
   scroll = document.querySelector('.scroll'),
-  copyr = document.querySelector('.copyrights');
+  copyr = document.querySelector('.copyr');
     
 
 // ABOUT SECTION
@@ -28,11 +28,11 @@ var waypoint1 = new Waypoint({
   handler: function(direction) {
     console.log('Scrolled to waypoint!')
     header.classList.toggle('is-reached');
-    icons.classList.toggle('is-reached');
-    lang.classList.toggle('is-reached');
+    footer.classList.toggle('is-reached');
     logo.classList.toggle('is-reached');
     counter.classList.toggle('is-reached');
-  }
+  },
+  offset: '40%'
 });
 
 var waypoint2 = new Waypoint({
@@ -40,13 +40,11 @@ var waypoint2 = new Waypoint({
   handler: function(direction) {
     console.log('Scrolled to waypoint!')
     header.classList.toggle('is-reached');
-    icons.classList.toggle('is-reached');
-    lang.classList.toggle('is-reached');
+    footer.classList.toggle('is-reached');
     logo.classList.toggle('is-reached');
     counter.classList.toggle('is-reached');
-    copyr.classList.toggle('is-reached');
   },
-  offset: '80%'
+  offset: '30%'
 });
 
 var waypoint3 = new Waypoint({
@@ -57,6 +55,17 @@ var waypoint3 = new Waypoint({
   },
   offset: '70%'
 })
+
+var waypoint4 = new Waypoint({
+  element: document.getElementById('end'),
+  handler: function(direction) {
+    console.log('OOOK');
+    copyr.classList.toggle('is-reached');
+  }, 
+  offset: '30%'
+});
+
+
 
 
 
