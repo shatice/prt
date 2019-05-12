@@ -18,12 +18,12 @@
 
 .intro__container {
   position: relative;
-  // height: 100vh;
 }
 
 .intro__draw {
   width: 100%; 
   height: 70%;
+  overflow: hidden;
   position: relative;
   transform: translateY(-5vh);
 

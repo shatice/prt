@@ -7,7 +7,8 @@ let // ABOUT
   footer = document.querySelector('.footer'), 
   counter = document.querySelector('.counter'),
   scroll = document.querySelector('.scroll__down'),
-  copyr = document.querySelector('.copyr');
+  copyr = document.querySelector('.copyr'), 
+  networks = document.querySelector('.networks__list');
     
 
 // ABOUT SECTION
@@ -57,6 +58,7 @@ var waypoint4 = new Waypoint({
   element: document.getElementById('end'),
   handler: function(direction) {
     copyr.classList.toggle('is-reached');
+    networks.classList.toggle('is-reached');
   }, 
   offset: '30%'
 });

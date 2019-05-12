@@ -5,11 +5,33 @@
 }
 
 .networks__list {
+  @include smoothtrans; 
   display: flex; 
   justify-content: space-around; 
-  width: 30%; 
+  width: 80%; 
   margin: 0 auto; 
+  opacity: 0;
+  transform: scale(0.5);
+
+  @include medium {
+    width: 30%; 
+  }
+
+  .icon {
+    fill: $second-color; 
+
+    @include medium {
+      width: 35px;
+      height: 35px;
+    }
+  }
 }
+
+.networks__list.is-reached {
+  opacity: 1;
+  transform: scale(1);
+}
+
 
 .copyr {
   @include smoothtrans; 
