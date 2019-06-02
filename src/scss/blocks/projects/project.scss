@@ -1,7 +1,7 @@
 .project__container {
   width: 100vw; 
   margin-top: 10vh; 
-  @include flexcolumn(flex-end);
+  @include flexcolumn(flex-end); 
 
   @include medium {
     height: 100vh;
@@ -26,5 +26,6 @@
     padding: 0; 
     display: flex;
     align-content: center; 
+    padding-left: 60px; 
   }
 }
