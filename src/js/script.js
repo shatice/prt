@@ -8,7 +8,8 @@ let // ABOUT
   counter = document.querySelector('.counter'),
   scroll = document.querySelector('.scroll__down'),
   copyr = document.querySelector('.copyr'), 
-  networks = document.querySelector('.networks__list');
+  networks = document.querySelector('.networks__list'),
+  projects = document.querySelector('.projects');
     
 
 // ABOUT SECTION
@@ -20,6 +21,7 @@ logo.addEventListener('click', function() {
   icons.classList.toggle('is-open');
   footer.classList.toggle('is-open');
   lang.classList.toggle('is-hidden');
+  projects.classList.toggle('is-hidden');
 })
 
 // WAIPOINT
