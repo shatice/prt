@@ -16,6 +16,10 @@
   }
 }
 
+.cover__draw--socomptoir {
+  stroke-width: 3; 
+}
+
 .leaf3, .carot, .tomato1 {
   animation: fallmobile 7s linear infinite;
   @include medium {
