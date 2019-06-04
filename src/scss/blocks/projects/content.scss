@@ -60,7 +60,7 @@
   margin: 0 auto 20px auto; 
   @include smoothtrans; 
   cursor: pointer;
-  width: 100px; 
+  width: 150px; 
   height: 40px; 
   border: solid $second-color;
   border-radius: 20px; 
@@ -69,11 +69,16 @@
   color: $second-color; 
 
   @include medium {
-    margin: 0; 
+    margin: 10px 0 0 0; 
   }
 
   &:hover {
     background-color: $second-color;
     color: white; 
   }
+}
+
+.button--design {
+  width: 200px;
+  margin-top: 10px; 
 }
