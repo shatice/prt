@@ -11,8 +11,6 @@
 .intro {
   width: 100vw; 
   height: 100vh;
-  background: $second-color; 
-  background: white; 
   @include flexcolumn(center);
 }
 
