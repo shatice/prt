@@ -1,3 +1,3 @@
-Portfolio 2019 | <b>Front End Developer</b>
+#Portfolio 2019 | Front End Developer
 
 https://sgungor-portfolio.netlify.com/
