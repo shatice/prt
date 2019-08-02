@@ -1,4 +1,4 @@
-let // ABOUT
+const // ABOUT
   about = document.querySelector('.about'),
   header = document.querySelector('.header'),
   logo = document.querySelector('.logo'),
