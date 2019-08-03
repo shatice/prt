@@ -3,10 +3,9 @@
   height: 55%;
   @include flexcolumn(space-between); 
 
-  @include medium {
-    width: 550px; 
+  @include large {
     height: 400px;
-    padding: 0 40px 40px 40px; 
+    padding: 0 0 40px 40px; 
     line-height: 2; 
   }
 }
@@ -24,7 +23,7 @@
     font-weight: bold; 
   }
 
-  @include medium {
+  @include large {
     margin-bottom: 0; 
     h2 {
       font-size: 3rem; 
@@ -43,7 +42,7 @@
   margin-bottom: 40px; 
   line-height: 1.5;
 
-  @include medium {
+  @include large {
     height: 200px;
     width: 100%; 
     margin-bottom: 0;
@@ -60,7 +59,7 @@
   margin: 0 auto 20px auto; 
   @include smoothtrans; 
   cursor: pointer;
-  width: 150px; 
+  width: 200px; 
   height: 40px; 
   border: solid $second-color;
   // border-radius: 20px; 
@@ -68,7 +67,7 @@
   align-items: center; 
   color: $second-color; 
 
-  @include medium {
+  @include large {
     margin: 10px 0 0 0; 
   }
 
@@ -79,6 +78,5 @@
 }
 
 .button--design {
-  width: 200px;
   margin-top: 10px; 
 }

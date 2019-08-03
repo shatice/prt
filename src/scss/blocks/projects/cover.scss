@@ -2,7 +2,7 @@
   margin-bottom: 20px; 
   padding: 0 5vw 0 5vw; 
 
-  @include medium {
+  @include large {
     padding: 0;
   }
 }
@@ -12,8 +12,13 @@
   height: 200px;
   margin: 0 auto; 
   background-color: $second-color;
+  transition: all 1s; 
 
   @include medium {
+    width: 400px; 
+  }
+
+  @include large {
     width: 400px; 
     height: 400px;
   }

@@ -25,7 +25,7 @@
   position: relative;
   transform: translateY(-5vh);
 
-  @include medium {
+  @include large {
     transform: translateY(0);
   }
 }
@@ -54,7 +54,7 @@
   position: absolute; 
   top: 0; 
 
-  @include medium {
+  @include large {
     font-size: 4.5rem; 
     -webkit-text-stroke-width: 2px; 
   }
@@ -63,7 +63,7 @@
 .intro__subtitle {
   font-size: 1.5rem; 
 
-  @include medium {
+  @include large {
     font-size: 3.5rem; 
   }
 }
@@ -85,7 +85,7 @@
   animation: jump 1s alternate infinite; 
   font-size: 0.8rem; 
 
-  @include medium {
+  @include large {
     font-size: 1rem; 
   }
 }
@@ -96,7 +96,7 @@
   background: $first-color;
   margin: 10px 0 10px 0;
 
-  @include medium {
+  @include large {
     width: 5px; 
     height: 40px;
   }

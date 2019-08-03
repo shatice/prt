@@ -13,14 +13,14 @@
   opacity: 0;
   transform: scale(0.5);
 
-  @include medium {
+  @include large {
     width: 30%; 
   }
 
   .icon {
     fill: $second-color; 
 
-    @include medium {
+    @include large {
       width: 35px;
       height: 35px;
     }

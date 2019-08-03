@@ -15,7 +15,7 @@
   background: $second-color;
   color: white;
 
-  @include medium {
+  @include large {
     width: 500px;
     @include flexcolumn(center);
   }
@@ -34,7 +34,7 @@
   padding: 0 5vw 0 5vw;
   line-height: 1.5;
 
-  @include medium {
+  @include large {
     
     transform: translateY(0);
 
@@ -47,7 +47,7 @@
   font-weight: bold;
   font-size: 1.2rem;
 
-  @include medium {
+  @include large {
     font-size: 1.3rem;
   }
 }
@@ -55,7 +55,7 @@
 .about__title, .about__description, .about__infos {
   margin-bottom: 10px;
 
-  @include medium {
+  @include large {
     margin-bottom: 20px;
   }
 }
@@ -83,7 +83,7 @@ span.major {
   color: white;
   border-bottom: solid white;
 
-  @include medium {
+  @include large {
     font-size: 1rem;
   }
 }

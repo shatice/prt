@@ -3,29 +3,29 @@
   margin-top: 10vh; 
   @include flexcolumn(flex-end); 
 
-  @include medium {
+  @include large {
     height: 100vh;
     margin-top: 0;  
-    justify-content: center; 
+    justify-content: center;
+    overflow: hidden;
   }
 }
 
 .project__container:nth-child(1) {
   margin-top: 20vh; 
 
-  @include medium {
+  @include large {
     margin-top: 0;
   }
 }
 
 .project {
-  @include medium {
+  @include large {
     width: 1000px; 
     height: 400px;
     margin: auto; 
-    padding: 0; 
     display: flex;
     align-content: center; 
-    padding-left: 60px; 
+    padding: 0 20px; 
   }
 }

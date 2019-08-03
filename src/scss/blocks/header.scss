@@ -6,7 +6,7 @@
   left: 5vw;
   z-index: 50; 
 
-  @include medium {
+  @include large {
     top: 5vh;
     left: 5vw;
   }
@@ -15,7 +15,7 @@
 .header.is-open {
   color: white;
 
-  @include medium {
+  @include large {
     transform: translateX(65vw);
   }
 }
@@ -23,13 +23,13 @@
 .header__title {
   font-size: 2rem;
 
-  @include medium {
+  @include large {
     font-size: 2.5rem;
   }
 }
 
 .header__subtitle {
-  @include medium {
+  @include large {
     font-size: 1.25rem;
   }
 }

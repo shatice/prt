@@ -1,6 +1,6 @@
 .project__item--date {
   display: none; 
-  @include medium {
+  @include large {
     display: block;
     width: 50px; 
     margin-left: 20px; 

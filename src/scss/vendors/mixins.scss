@@ -1,7 +1,13 @@
 // MEDIA QUERIES
 
 @mixin medium {
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 550px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (min-width: 1000px) {
     @content;
   }
 }

@@ -8,7 +8,7 @@
   transform: translateX(200%);
   z-index: 45;
 
-  @include medium {
+  @include large {
     width: 90vw; 
     left: 5vw;
     padding: 0; 
@@ -36,7 +36,7 @@
 
   font-family: 'Bebas', sans-serif;
 
-  @include medium {
+  @include large {
     display: block;
     align-self: flex-end;
     width: 20%; 
@@ -52,7 +52,7 @@
   width: 60%;
   margin: 0 auto; 
 
-  @include medium {
+  @include large {
     display: flex;
     width: 20%;
     margin: 0; 
@@ -63,7 +63,7 @@
   @include smoothtrans;
 
   .icon {
-    @include medium {
+    @include large {
       fill: white;
       transform: none; 
     }
@@ -76,7 +76,7 @@
   height: 25px;
   fill: white;
 
-  @include medium {
+  @include large {
     fill: $first-color;
 
     &:hover {
