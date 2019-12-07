@@ -4,15 +4,15 @@
   @include flexcolumn(space-between); 
 
   @include large {
-    height: 400px;
-    padding: 0 0 40px 40px; 
+    height: 25rem;
+    padding: 0 0 2.5rem 2.5rem; 
     line-height: 2; 
   }
 }
 
 .title {
   line-height: 1.5; 
-  margin-bottom: 20px; 
+  margin-bottom: 1.25rem; 
 
   h2 {
     font-family: 'Bebas'; 
@@ -39,11 +39,11 @@
 
 .description {
   height: 50%;
-  margin-bottom: 40px; 
+  margin-bottom: 2.5rem; 
   line-height: 1.5;
 
   @include large {
-    height: 200px;
+    height: 12.5rem;
     width: 100%; 
     margin-bottom: 0;
     line-height: 2;
@@ -56,19 +56,18 @@
 }
 
 .button {
-  margin: 0 auto 20px auto; 
+  margin: 0 auto 1.25rem auto; 
   @include smoothtrans; 
   cursor: pointer;
-  width: 200px; 
-  height: 40px; 
+  width: 12.5rem; 
+  height: 2.5rem; 
   border: solid $second-color;
-  // border-radius: 20px; 
   @include flexcolumn(center); 
   align-items: center; 
   color: $second-color; 
 
   @include large {
-    margin: 10px 0 0 0; 
+    margin: 1rem 0 0 0; 
   }
 
   &:hover {
@@ -78,5 +77,5 @@
 }
 
 .button--design {
-  margin-top: 10px; 
+  margin-top: 1rem; 
 }

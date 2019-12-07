@@ -16,7 +16,7 @@
   color: white;
 
   @include large {
-    width: 500px;
+    width: 31rem;
     @include flexcolumn(center);
   }
 }
@@ -53,10 +53,10 @@
 }
 
 .about__title, .about__description, .about__infos {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 
   @include large {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -73,11 +73,8 @@ span.major {
 }
 
 .contact__item {
-  width: 90px;
-
-  margin-bottom: 5px;
-  padding-bottom: 5px;
-
+  width: 5.625rem;
+  margin-bottom: .5rem;
   font-size: 0.9rem;
   text-decoration: none;
   color: white;
