@@ -5,6 +5,7 @@
 
   @include large {
     height: 25rem;
+    width: 50%;
     padding: 0 0 2.5rem 2.5rem; 
     line-height: 2; 
   }
@@ -17,6 +18,10 @@
   h2 {
     font-family: 'Bebas'; 
     font-size: 1.5rem; 
+
+    small {
+      font-size: 1rem;
+    }
   }
 
   h3 {
@@ -43,11 +48,11 @@
   line-height: 1.5;
 
   @include large {
-    height: 12.5rem;
+    // height: 12.5rem;
     width: 100%; 
     margin-bottom: 0;
     line-height: 2;
-    padding-right: 5vw; 
+    // padding-right: 5vw; 
   }
 }
 

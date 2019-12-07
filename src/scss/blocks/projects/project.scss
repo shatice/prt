@@ -21,11 +21,11 @@
 
 .project {
   @include large {
-    width: 62.5rem; 
+    width: 56.5rem; 
     height: 25rem;
     margin: auto; 
     display: flex;
+    justify-content: space-between;
     align-content: center; 
-    padding: 0 1.25rem; 
   }
 }

@@ -1,9 +1,12 @@
 .cover__container {
   margin-bottom: 1.25rem; 
   padding: 0 5vw 0 5vw; 
+  width: 25rem; 
 
   @include large {
     padding: 0;
+    width: 25rem; 
+    height: 25rem;
   }
 }
 
@@ -15,12 +18,12 @@
   transition: all 1s; 
 
   @include medium {
-    width: 25rem; 
+    width: 100%; 
   }
 
   @include large {
-    width: 25rem; 
-    height: 25rem;
+    width: 100%; 
+    height: 100%;
   }
 }
 
