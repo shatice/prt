@@ -1,7 +1,7 @@
 .project__container {
   width: 100vw; 
-  margin-top: 10vh; 
-  @include flexcolumn(flex-end); 
+  margin: 8rem auto; 
+  @include flexbox(row, flex-end, unset); 
 
   @include large {
     height: 100vh;
@@ -11,21 +11,23 @@
   }
 }
 
-.project__container:nth-child(1) {
-  margin-top: 20vh; 
-
-  @include large {
-    margin-top: 0;
-  }
-}
-
 .project {
+
+  .project__item--date {
+    display: none; 
+  }
+
   @include large {
-    width: 56.5rem; 
+    width: 54rem; 
     height: 25rem;
     margin: auto; 
-    display: flex;
-    justify-content: space-between;
-    align-content: center; 
+    @include flexbox(row, space-between, flex-start);
+
+    .project__item--date {
+      display: block;
+      width: 3.125rem; 
+      font-family: 'Bebas', sans-serif; 
+      font-size: 2.5rem; 
+    }
   }
 }
