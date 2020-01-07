@@ -169,37 +169,42 @@ function waypoints() {
   networks = document.querySelector('.networks__list'),
   main = document.querySelector('.projects');
 
+  const toBeOpen = [about, header, logo, icons, footer]; 
+  const toBeHidden = [lang, main];
+
   logo.addEventListener('click', function() {
-    about.classList.toggle('is-open');
-    header.classList.toggle('is-open');
-    logo.classList.toggle('is-open');
-    icons.classList.toggle('is-open');
-    footer.classList.toggle('is-open');
-    lang.classList.toggle('is-hidden');
-    main.classList.toggle('is-hidden');
+
+    toBeOpen.forEach(el => {
+      el.classList.toggle('is-open');
+    });
+
+    toBeHidden.forEach(el => {
+      el.classList.toggle('is-hidden');
+    });
   })
   
   // WAYPOINT
+
+  const Wp1Items = [header, footer, logo, scroll];
   
   let waypoint1 = new Waypoint({
     element: main,
     handler: function(direction) {
-      header.classList.toggle('is-reached');
-      footer.classList.toggle('is-reached');
-      logo.classList.toggle('is-reached');
-      scroll.classList.toggle('is-reached');
+      Wp1Items.forEach(el => {
+        el.classList.toggle('is-reached');
+      });
     },
     offset: '60%'
   });
+
+  const Wp2Items = [copyr, networks, header, footer, logo];
   
   let waypoint2 = new Waypoint({
     element: document.querySelector('.end'),
     handler: function(direction) {
-      copyr.classList.toggle('is-reached');
-      networks.classList.toggle('is-reached');
-      header.classList.toggle('is-reached');
-      footer.classList.toggle('is-reached');
-      logo.classList.toggle('is-reached');
+      Wp2Items.forEach(el => {
+        el.classList.toggle('is-reached');
+      });
     }, 
     offset: '30%'
   });
