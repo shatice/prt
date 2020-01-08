@@ -51,7 +51,7 @@ function createProject() {
     `LV`, 
     `Site Web | Intégration`, 
     `<p>Intégration d’un site vitrine présentant les projets cinématographiques d’une jeune réalisatrice.</p><p>Design en collaboration avec la cliente.`, 
-    `https://leonieviolain.netlify.com/`, 
+    `https://www.leonieviolain.com/`, 
     seeSite
   )
   
