@@ -99,7 +99,7 @@ function createProject() {
     seeSite
   )
   
-  const myProjects = [molePeople, urinUp, lv, uryo, voisyages, socomptoir, lost];
+  const myProjects = [lv, molePeople, urinUp, uryo, voisyages, socomptoir, lost];
   
   myProjects.forEach(myProject => {
     const projectMarkUp = `
