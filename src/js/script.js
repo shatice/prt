@@ -19,18 +19,31 @@ function createProject() {
   
   const eighteen = `<p>2</p><p>0</p><p>1</p><p>8</p>`, 
         nineteen = `<p>2</p><p>0</p><p>1</p><p>9</p>`, 
+        twenty = `<p>2</p><p>0</p><p>2</p><p>0</p>`, 
         seeSite = 'VOIR LE SITE', 
-        seeDesign = 'VOIR LES MAQUETTES';
+        seeDesign = 'VOIR LES MAQUETTES',
+        seeCode = "VOIR SUR GITHUB"
+
+  const plastic = new Project(
+    twenty, 
+    `cover__draw--plastic`, 
+    `#plastic`, 
+    `<p>Our Plastic World</p>`, 
+    `Datavisualisation | Conception, Design, Développement front & Gestion de projet`, 
+    `<p>Datavisualisation sur l'impact mondial de la pollution du plastique.</p><p>Projet <span class="major">React.js</span> et <span class="major">Symfony</span>.</p><p>[Hébergement en cours]</p>`, 
+    `https://github.com/shatice/our-plastic-world`, 
+    seeCode
+  )
   
   const molePeople = new Project(
     nineteen, 
     `cover__draw--molepeople`, 
     `#molepeople`, 
     `<p>Quand la vie se terre</p>`, 
-    `Web Documentaire | Conception, intégration & gestion de projet`, 
-    `<p>Conception d'un web documentaire à propos de la population vivant dans les souterrains méconnus de New York que l'on appelle les "hommes taupes".</p><p>Projet <span class="major">Vue.js</span> et <span class="major">Node.js</span></p><p>[Hébergement en cours]</p>`, 
+    `Web Documentaire | Conception, Développement front & Gestion de projet`, 
+    `<p>Conception d'un web documentaire sur la population vivant dans les souterrains méconnus de New York que l'on appelle les "hommes taupes".</p><p>Projet <span class="major">Vue.js</span> et <span class="major">Node.js</span></p><p>[Hébergement en cours]</p>`, 
     `https://github.com/FRobaglia/mole-people`, 
-    `VOIR SUR GITHUB`
+    seeCode
   )
   
   const urinUp = new Project(
@@ -38,7 +51,7 @@ function createProject() {
     `cover__draw--urinup`, 
     `#urinup`, 
     `URINUP`, 
-    `Histoire interactive | Intégration & Graphisme`, 
+    `Histoire interactive | Développement front & Graphisme`, 
     `<p>Création en duo d'un jeu en ligne sous la forme d'une histoire interative.</p><p>Projet <span class="major">Vue.js</span>, animations <span class="major">CSS/SVG</span>. </p>`, 
     `https://urinup.netlify.com/`, 
     seeSite
@@ -49,7 +62,7 @@ function createProject() {
     `cover__draw--lv`, 
     `#lv`, 
     `LV`, 
-    `Site Web | Intégration`, 
+    `Site Web | Développement front`, 
     `<p>Intégration d’un site vitrine présentant les projets cinématographiques d’une jeune réalisatrice.</p><p>Design en collaboration avec la cliente.`, 
     `https://www.leonieviolain.com/`, 
     seeSite
@@ -99,7 +112,7 @@ function createProject() {
     seeSite
   )
   
-  const myProjects = [lv, molePeople, urinUp, uryo, voisyages, socomptoir, lost];
+  const myProjects = [plastic, lv, molePeople, urinUp, uryo, voisyages, socomptoir, lost];
   
   myProjects.forEach(myProject => {
     const projectMarkUp = `
