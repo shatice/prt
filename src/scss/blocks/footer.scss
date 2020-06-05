@@ -34,7 +34,7 @@
 
   display: none;
 
-  font-family: 'Bebas', sans-serif;
+  font-family: $secondary-font;
 
   @include large {
     display: block;
